@@ -30,7 +30,7 @@ public class User
 
     public String getName(){ return name; }
 
-    public String geta(){ return address; }
+    public String getAddress(){ return address; }
 
     @Override
     public boolean equals(Object o){
