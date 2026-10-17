@@ -21,7 +21,7 @@ public class User
         name = n;
     }
 
-    public void setA(String a)
+    public void setAddress(String a)
     {
         address = a;
     }
