@@ -39,4 +39,11 @@ public class User
         }
         return false;
     }
+
+    @Override
+    public int hashCode()
+    {
+        return java.util.Objects.hashCode(name);
+    }
+
 }
