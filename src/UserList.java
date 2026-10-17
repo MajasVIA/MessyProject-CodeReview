@@ -13,7 +13,7 @@ public class UserList
         this.users.add(u);
     }
 
-    public ArrayList<User> getu()
+    public ArrayList<User> getUsers()
     {
         return users;
     }
