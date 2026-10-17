@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class UserList
 {
-    public ArrayList<User> u = new ArrayList<User>();
+    public ArrayList<User> users = new ArrayList<User>();
 
     public void add(User u)
     {
@@ -10,11 +10,11 @@ public class UserList
         {
             return;
         }
-        this.u.add(u);
+        this.users.add(u);
     }
 
     public ArrayList<User> getu()
     {
-        return u;
+        return users;
     }
 }
