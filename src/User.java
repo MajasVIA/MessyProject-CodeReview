@@ -4,13 +4,10 @@ public class User
     public String c_nam = "Ukendt";
     public String address;
 
-    public User(String n, int i){
+    public User(String n, int i)
+    {
         c_id = i;
-        if (n == null || n.trim().length() == 0 || n.length() > 100)// Testing length
-        {
-            return; //If string is invalid, we dont try to store it
-        }
-        c_nam = n;
+        setC_nam(n);
     }
 
     public void setC_nam(String n)
