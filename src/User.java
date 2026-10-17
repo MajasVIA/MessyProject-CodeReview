@@ -28,7 +28,7 @@ public class User
 
     public int geti(){ return c_id; }
 
-    public String getn(){ return name; }
+    public String getName(){ return name; }
 
     public String geta(){ return address; }
 
