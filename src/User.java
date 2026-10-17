@@ -2,9 +2,9 @@ public class User
 {
     private static final int MAX_NAME_LENGTH = 100;
 
-    public int id;
-    public String name = "Ukendt";
-    public String address;
+    private int id;
+    private String name = "Ukendt";
+    private String address;
 
     public User(String n, int i)
     {
