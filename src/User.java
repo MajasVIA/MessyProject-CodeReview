@@ -43,7 +43,7 @@ public class User
     @Override
     public int hashCode()
     {
-        return java.util.Objects.hashCode(name);
+        return java.util.Objects.hash(name);
     }
 
 }
