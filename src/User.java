@@ -3,22 +3,22 @@ public class User
     private static final int MAX_NAME_LENGTH = 100;
 
     public int c_id;
-    public String c_nam = "Ukendt";
+    public String name = "Ukendt";
     public String address;
 
     public User(String n, int i)
     {
         c_id = i;
-        setC_nam(n);
+        setName(n);
     }
 
-    public void setC_nam(String n)
+    public void setName(String n)
     {
         if (n == null || n.trim().length() == 0 || n.length() > MAX_NAME_LENGTH)
         {
             return; //If string is invalid, we dont try to store it
         }
-        c_nam = n;
+        name = n;
     }
 
     public void setA(String a)
@@ -28,14 +28,14 @@ public class User
 
     public int geti(){ return c_id; }
 
-    public String getn(){ return c_nam; }
+    public String getn(){ return name; }
 
     public String geta(){ return address; }
 
     @Override
     public boolean equals(Object o){
         if(o instanceof User u){
-            return java.util.Objects.equals(u.c_nam, c_nam);
+            return java.util.Objects.equals(u.name, name);
         }
         return false;
     }
