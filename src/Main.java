@@ -13,6 +13,6 @@ public class Main
 
         System.out.println(list.getUsers().contains(new User("Bob", 11)));
 
-        Persister.saveUsers(list);
+        Persister.saveUsers(list.getUsers());
     }
 }
