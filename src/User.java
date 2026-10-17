@@ -2,13 +2,13 @@ public class User
 {
     private static final int MAX_NAME_LENGTH = 100;
 
-    public int c_id;
+    public int id;
     public String name = "Ukendt";
     public String address;
 
     public User(String n, int i)
     {
-        c_id = i;
+        id = i;
         setName(n);
     }
 
@@ -26,7 +26,7 @@ public class User
         address = a;
     }
 
-    public int geti(){ return c_id; }
+    public int geti(){ return id; }
 
     public String getName(){ return name; }
 
